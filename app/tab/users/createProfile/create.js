@@ -1,11 +1,11 @@
+"use client";
 import React, { useState } from 'react';
 import { useSession } from "next-auth/react";
 import dynamic from "next/dynamic";
 import 'react-quill/dist/quill.snow.css';
-import Header from '@/app/components/header';
 
 export default function createProfile() {
-const { data: session } = useSession();
+    const { data: session } = useSession();
 
     const [name, setUsername] = useState("");
     const [age, setUserAge] = useState("");
