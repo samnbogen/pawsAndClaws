@@ -3,7 +3,7 @@
 Paws and Claws is a web application built with React, Tailwind CSS, MongoDB, and NextAuth.js. It is a platform for users to showcase their cute pets!
 
 It is currently deployed on Vercel
-https://paws-and-claws-seven.vercel.app/
+[PawsAndClaws](https://paws-and-claws-seven.vercel.app/)
 
 ## Features
 
