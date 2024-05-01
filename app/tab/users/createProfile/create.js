@@ -4,7 +4,7 @@ import { useSession } from "next-auth/react";
 import dynamic from "next/dynamic";
 import 'react-quill/dist/quill.snow.css';
 
-export default function createProfile() {
+export default function CreateProfile() {
     const { data: session } = useSession();
 
     const [name, setUsername] = useState("");
