@@ -16,12 +16,8 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full z-50">
       <div>
-        <div className="bg-green max-w-screen h-14 flex flew-row justify-between items-center">
-          <div className="flex items-center ml-10">
-            <img src={"/flag.svg"} alt="description" />
-            <h1 className="text-black text-xs ml-2">Canadian Made</h1>
-          </div>
-          <div className="flex items-center flew-row justify-end mr-10">
+        <div className="bg-green max-w-screen h-8">          
+          <div className="flex items-center flew-row justify-end mr-10 p-2">
             {session ? (
                       <Link href={"/users"} className="text-black text-xs">
                         Email: {session.user.email} | Role: {session.user.role} |
@@ -31,14 +27,14 @@ export default function Navbar() {
                   )}
           </div>
         </div>
-        <div className="bg-black flex flew-row items-center justify-between h-12 px-4">          
+        <div className="bg-black flex flew-row items-center justify-between h-16 px-4">          
           <Link href={"/"}>
             <div className="max-w-7xl sm:px-2 lg:px-4 flex flex-row items-center justify-start">
               <img
                 src={"/paw.svg"}
                 alt="description"
                 className="h-8 w-auto"/>
-              <h2 className="text-white text-xs ml-4">PAWS AND CLAWS</h2>
+              <h2 className="text-white text-sm ml-4">PAWS AND CLAWS</h2>
               </div>
           </Link>
           <div className="flex items-center flew-row justify-end  ">

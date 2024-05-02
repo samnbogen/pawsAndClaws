@@ -65,7 +65,7 @@ const { data: session } = useSession();
     }
 
 return (
-    <form onSubmit={handleSubmit} className="border w-2/5 rounded-b-lg border-light-gray p-4 max-w-xl mx-auto bg-white">
+    <form onSubmit={handleSubmit} className="border w-2/5 rounded-b-lg border-light-gray p-4 max-w-xl mx-auto bg-white mb-10">
         <h1 className="text-lg p-1">General Information</h1>
         <div className="flex flex-row">
             <div className="p-1 w-1/2">
@@ -144,14 +144,14 @@ return (
              }} />
         </div>
        {/* {!photo && <img src="/noImage.png" alt="no photo" className='mt-2'/>} */}
-        <div className="flex flex-row p-1">
+        <div className="flex flex-row justify-between">
             <div className="w-1/2">
-                <button type="submit" className="text-center text-white p-1 w-40 border-2 border-green bg-green rounded-lg hover:bg-white hover:cursor-pointer hover:text-green">
+                <button type="submit" className="text-center text-white p-1 mx-10 w-40 border-2 border-green bg-green rounded-lg hover:bg-white hover:cursor-pointer hover:text-green">
                     Save
                 </button>
             </div>
             <div className=" ml-12 w-1/2">
-                <button type="button" className="text-center text-white p-1 w-40 border-2 border-red bg-red rounded-lg hover:bg-white hover:cursor-pointer hover:text-red">
+                <button type="button" className="text-center text-white p-1 mx-10 w-40 border-2 border-red bg-red rounded-lg hover:bg-white hover:cursor-pointer hover:text-red">
                     Cancel
                 </button>
             </div>

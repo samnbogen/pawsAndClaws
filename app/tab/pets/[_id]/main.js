@@ -1,9 +1,8 @@
 "use client";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from 'react';
-import dynamic from "next/dynamic";
 
-export default function PetCardForm() {
+export default function PetCard() {
 const pathname = usePathname();
 const lastPartOfPathname = pathname.split("/").pop();
 const [petCard, setPetCard] = useState([]);
@@ -40,6 +39,15 @@ if (lastPartOfPathname) {
     //console.log("foundPetCard", foundPetCard);
     if (foundPetCard) {
         return (
+            <div className="mt-36 mb-10">
+                <div class="flex flex-row pb-6 justify-center">
+                    <div>
+                        <h1 class="text-3xl pr-1">Pet</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl text-green">Card</h1>
+                    </div>
+                </div>
             <div className="border w-2/5 rounded-b-lg border-light-gray p-4 max-w-xl mx-auto">
                 <div className="flex flex-row">                        
                             <div className="p-1 w-1/2">                                
@@ -87,6 +95,7 @@ if (lastPartOfPathname) {
                         </div>
                     </div>
                 </div>
+            </div>
             );
         }
     }
